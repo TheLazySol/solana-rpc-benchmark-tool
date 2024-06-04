@@ -32,12 +32,14 @@ This repository contains a script designed to evaluate the efficiency of the `se
 
 Before running the script, ensure that all configuration parameters are set according to your testing requirements. Rename `.env.example` to `.env`, adjust the parameters as needed.
 
-To execute the script, use the following command:
+To execute the script, use the following command: 
 
 ```bash
-npm install
-npm run start
+yarn add --dev @types/estree @types/istanbul-lib-coverage @types/istanbul-lib-report @types/istanbul-reports @types/stack-utils @types/yargs @types/yargs-parser
+yarn install
+yarn run start
 ```
+yarn add will fix the missing dependencies required for the scripts to run. 
 
 Example output
 ```bash
